@@ -15,4 +15,10 @@ void TicTacToe::displayGame(){
         }
     }
     std::cout << "\n";
-}
+};
+
+void TicTacToe::resetBoard(){
+    for (int i = 0; i < 9; i++){
+        board[i] = static_cast<char>(i + 1);
+    }
+};
